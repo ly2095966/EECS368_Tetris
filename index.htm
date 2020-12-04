@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+    <script src="logic.js" type="text/javascript" charset="utf-8"></script>
+    <link rel='stylesheet' type='text/css' href='css.css' />
+</head>
+<body  onkeydown="keyDown(event)" style="background-Color:#9E9E9E;">
+<div class="gameZone">
+<div id="mask" class="mask"></div>
+<div id="map" class="map"></div>
+<div id="gameOver" class="gameOver"></div>
+<div id="PreviewMap" class="PreviewMap"></div>
+
+<div id="scoreSpeed" class="scoreSpeed"> Score: <span id="score" class="score">0</span></div>
+<div id="start" class="start">
+<input type="button" id="btnStart" class="start-btn" value="Start game" onclick="GameStart(this);" />&nbsp;
+<select id="speed"  style="display:none" onchange="ChangeSpeed();"></select>
+</div>
+</div>
+</body>
+</html>
